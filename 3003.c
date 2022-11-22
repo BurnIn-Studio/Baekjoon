@@ -12,13 +12,7 @@ int cal(int original, int input);
 int main(){
     int king, queen, rook, bishop, knight, pawn;
     scanf("%d %d %d %d %d %d", &king, &queen, &rook, &bishop, &knight, &pawn);
-    king = cal(KING, king);
-    queen = cal(QUEEN, queen);
-    rook = cal(ROOK, rook);
-    bishop = cal(BISHOP, bishop);
-    knight = cal(KNIGHT, knight);
-    pawn = cal(PAWN, pawn);
-    printf("%d %d %d %d %d %d", king, queen, rook, bishop, knight, pawn);
+    printf("%d %d %d %d %d %d", cal(KING, king), cal(QUEEN, queen), cal(ROOK, rook), cal(BISHOP, bishop), cal(KNIGHT, knight), cal(PAWN, pawn));
     return 0;
 }
 
